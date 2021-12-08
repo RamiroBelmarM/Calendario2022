@@ -1,0 +1,163 @@
+\documentclass[17pt,british,sundayweek,giant,landscape,nobabel]{cdcalendar}
+
+\usepackage[T1]{fontenc}
+\usepackage[rm,scale=0.94]{roboto}
+\usepackage{graphicx}
+\graphicspath{{img/}}
+\usepackage{fontawesome5}
+\usepackage{id-mod}
+\usepackage{transparent}
+
+\tikzset{blue icon/.style={text=SkyBlue,font=\Large}}
+\tikzset{pink icon/.style={text=Pink,font=\large}}
+\tikzset{life icon/.style={text=Gold,font=\large\transparent{0.4} }}
+\tikzset{death icon/.style={text=Cyan,font=\large\transparent{0.4}}}
+\tikzset{holiday/.style={rectangle,fill=orange!70}}
+
+
+% Default values -- change if needed
+% \setlength{\CalPageMargin}{1cm}
+% \setlength{\EventLineWidth}{6in}
+\geometry{a4paper,left=10cm}
+
+%\monthTitleStyle{font={\fontsize{56pt}{56pt}\bfseries\sffamily\itshape\selectfont}, red!50!Red}
+
+
+\usetikzlibrary {lindenmayersystems}
+\pgfdeclarelindenmayersystem{Fractal plant}{
+  \rule{X -> F-[[X]+X]+F[+FX]-X}
+  \rule{F -> FF}}
+
+\begin{document}
+
+\monthTitleStyle{font={\bf\Huge}, Brown}
+\sundayColor{olive}
+\eventStyle{\transparent{0.4}\tiny\sffamily}
+
+
+\illustration[Pythagorean theorem]{8.25cm}{enero_cover}
+\begin{monthCalendar}{2022}{01}
+\event[mark style=death icon,marker=\faAtom]{2022-01-04}{}{Fallecimiento de Erwin Schrödinger}
+\event[mark style=death icon,marker=\faAtom]{2022-01-01}{}{Fallecimiento de Heinrich Hertz}
+\event[mark style=death icon,marker=\faAtom]{2022-01-07}{}{Fallecimiento de Nikola Tesla}
+\event[mark style=death icon,marker=\faAtom]{2022-01-05}{}{Fallecimiento de Max Born}
+\event[mark style=death icon,marker=\faAtom]{2022-01-08}{}{Fallecimiento de Galileo Galilei}
+\event[mark style=life icon,marker=\faSquareRoot*]{2022-01-23}{}{Natalicio de David Hilbert}
+\end{monthCalendar}
+
+
+\clearpage
+\illustration[Derivative]{8.25cm}{febrero_cover}
+\begin{monthCalendar}{2022}{02}
+\event[mark style=life icon,marker=\faAtom]{2022-02-15}{}{Natalicio de Galileo Galilei}
+\event[mark style=life icon,marker=\faAtom]{2022-02-18}{}{Natalicio de Alessandro Volta}
+\event[mark style=life icon,marker=\faAtom]{2022-02-22}{}{Natalicio de Heinrich Hertz}
+\event[mark style=death icon,marker=\faAtom]{2022-02-15}{}{Fallecimiento de Richard Feynman}
+\event[mark style=death icon,marker=\faAtom]{2022-02-01}{}{Fallecimiento de Werner Heisenberg}
+\event[mark style=death icon,marker=\faSquareRoot*]{2022-02-23}{}{Fallecimiento de Carl Friedrich Gauss}
+\event[mark style=death icon,marker=\faSquareRoot*]{2022-02-14}{}{Fallecimiento de David Hilbert}
+\end{monthCalendar}
+
+\clearpage
+\illustration[Lorenz attractor]{8.25cm}{marzo_cover}
+\begin{monthCalendar}{2022}{03}
+\event[mark style=death icon,marker=\faAtom]{2022-03-20}{}{Fallecimiento de Isaac Newton}
+\event[mark style=life icon,marker=\faAtom]{2022-03-14}{}{Natalicio de Albert Einstein}
+\event[mark style=death icon,marker=\faAtom]{2022-03-05}{}{Fallecimiento de Alessandro Volta}
+\event[mark style=death icon,marker=\faAtom]{2022-03-15}{}{Fallecimiento de Arthur Compton}
+\event[mark style=life icon,marker=\faSquareRoot*]{2022-03-21}{}{Natalicio de Joseph Fourier}
+\event[mark style=life icon,marker=\faSquareRoot*]{2022-03-23}{}{Natalicio de Emmy Noether}
+\end{monthCalendar}
+
+
+\clearpage
+\illustration[Sturm–Liouville theory]{8.25cm}{abril_cover}
+\begin{monthCalendar}{2022}{04}
+\event[mark style=life icon,marker=\faAtom]{2022-04-25}{}{Natalicio de Guglielmo Marconi}
+\event[mark style=life icon,marker=\faAtom]{2022-04-23}{}{Natalicio de Max Planck}
+\event[mark style=death icon,marker=\faAtom]{2022-04-18}{}{Fallecimiento de Albert Einstein}
+\event[mark style=life icon,marker=\faSquareRoot*]{2022-04-15}{}{Natalicio de Leonhard Euler}
+\event[mark style=life icon,marker=\faSquareRoot*]{2022-04-30}{}{Natalicio de Carl Friedrich Gauss}
+\event[mark style=death icon,marker=\faSquareRoot*]{2022-04-14}{}{Fallecimiento de Emmy Noether}
+\event[mark style=death icon,marker=\faSquareRoot*]{2022-04-26}{}{Fallecimiento de Srinivasa Ramanujan}
+\end{monthCalendar}
+
+
+\clearpage
+\illustration[Fourier transform]{8.25cm}{mayo_cover}
+\begin{monthCalendar}{2022}{05}
+\event[mark style=life icon,marker=\faAtom]{2022-05-11}{}{Natalicio de Richard Feynman}
+\event[mark style=death icon,marker=\faSquareRoot*]{2022-05-16}{}{Fallecimiento de Joseph Fourier}
+\end{monthCalendar}
+
+\clearpage
+\illustration[Wave equation]{8.25cm}{junio_cover}
+\begin{monthCalendar}{2022}{06}
+\event[mark style=life icon,marker=\faAtom]{2022-06-13}{}{Natalicio de James Clerk Maxwell}
+\event[mark style=death icon,marker=\faAtom]{2022-06-24}{}{Fallecimiento de James Chadwick}
+\end{monthCalendar}
+
+\clearpage
+\illustration[Maxwell's equations]{8.25cm}{julio_cover}
+\begin{monthCalendar}{2022}{07}
+\event[mark style=life icon,marker=\faAtom]{2022-07-10}{}{Natalicio de Nikola Tesla}
+\event[mark style=death icon,marker=\faAtom]{2022-07-04}{}{Fallecimiento de Marie Curie}
+\event[mark style=death icon,marker=\faAtom]{2022-07-20}{}{Fallecimiento de Guglielmo Marconi}
+\event[mark style=death icon,marker=\faSquareRoot*]{2022-07-20}{}{Fallecimiento de Bernhard Riemann}
+\end{monthCalendar}
+
+
+
+\clearpage
+\illustration[Riemann zeta function]{8.25cm}{agosto_cover}
+\begin{monthCalendar}{2022}{08}
+\event[mark style=life icon,marker=\faAtom]{2022-08-08}{}{Natalicio de Paul Dirac}
+\event[mark style=life icon,marker=\faAtom]{2022-08-30}{}{Natalicio de Ernest Rutherford}
+\event[mark style=life icon,marker=\faAtom]{2022-08-12}{}{Natalicio de Erwin Schrödinger}
+\event[mark style=death icon,marker=\faAtom]{2022-08-25}{}{Fallecimiento de Michael Faraday}
+\event[mark style=death icon,marker=\faAtom]{2022-08-30}{}{Fallecimiento de J.J. Thomson}
+\end{monthCalendar}
+
+\clearpage
+\illustration[Dirac equation]{8.25cm}{septiembre_cover}
+\begin{monthCalendar}{2022}{09}
+\event[mark style=life icon,marker=\faAtom]{2022-09-10}{}{Natalicio de Arthur Compton}
+\event[mark style=life icon,marker=\faAtom]{2022-09-22}{}{Natalicio de Michael Faraday}
+\event[mark style=life icon,marker=\faAtom]{2022-09-29}{}{Natalicio de Enrico Fermi}
+\event[mark style=life icon,marker=\faSquareRoot*]{2022-09-17}{}{Natalicio de Bernhard Riemann}
+\event[mark style=death icon,marker=\faSquareRoot*]{2022-09-18}{}{Fallecimiento de Leonhard Euler}
+\end{monthCalendar}
+
+\clearpage
+\illustration[Feynman diagram]{8.25cm}{octubre_cover}
+\begin{monthCalendar}{2022}{10}
+\event[mark style=life icon,marker=\faAtom]{2022-10-07}{}{Natalicio de Niels Bohr}
+\event[mark style=life icon,marker=\faAtom]{2022-10-20}{}{Natalicio de James Chadwick}
+\event[mark style=death icon,marker=\faAtom]{2022-10-19}{}{Fallecimiento de Ernest Rutherford}
+\event[mark style=death icon,marker=\faAtom]{2022-10-04}{}{Fallecimiento de Max Planck}
+\event[mark style=death icon,marker=\faAtom]{2022-10-20}{}{Fallecimiento de Paul Dirac}
+\end{monthCalendar}
+
+\clearpage
+\illustration[Standard Model]{8.25cm}{noviembre_cover}
+\begin{monthCalendar}{2022}{11}
+\event[mark style=life icon,marker=\faAtom]{2022-11-07}{}{Natalicio de C.V. Raman}
+\event[mark style=life icon,marker=\faAtom]{2022-11-07}{}{Natalicio de Marie Curie}
+\event[mark style=death icon,marker=\faAtom]{2022-11-05}{}{Fallecimiento de James Clerk Maxwell}
+\event[mark style=death icon,marker=\faAtom]{2022-11-28}{}{Fallecimiento de Enrico Fermi}
+\event[mark style=death icon,marker=\faAtom]{2022-11-18}{}{Fallecimiento de Niels Bohr}
+\event[mark style=death icon,marker=\faAtom]{2022-11-21}{}{Fallecimiento de C.V. Raman}
+\end{monthCalendar}
+
+\clearpage
+\illustration[General relativity]{8.25cm}{diciembre_cover}
+\begin{monthCalendar}{2022}{12}
+\event[mark style=life icon,marker=\faAtom]{2022-12-25}{}{Natalicio de Isaac Newton}
+\event[mark style=life icon,marker=\faAtom]{2022-12-18}{}{Natalicio de J.J. Thomson}
+\event[mark style=life icon,marker=\faAtom]{2022-12-11}{}{Natalicio de Max Born}
+\event[mark style=life icon,marker=\faAtom]{2022-12-05}{}{Natalicio de Werner Heisenberg}
+\event[mark style=life icon,marker=\faSquareRoot*]{2022-12-22}{}{Natalicio de Srinivasa Ramanujan}
+\end{monthCalendar}
+
+
+\end{document}
